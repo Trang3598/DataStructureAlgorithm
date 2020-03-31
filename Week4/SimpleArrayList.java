@@ -58,7 +58,7 @@ public class SimpleArrayList<T> implements ListInterface<T> {
 	public void remove(T data) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < array.length; i++) {
-			if (array[i] == data) {
+			if (array[i].equals(data)) {
 				array[i] = array[i + 1];
 			}
 		}
@@ -69,7 +69,7 @@ public class SimpleArrayList<T> implements ListInterface<T> {
 	public boolean isContain(T data) {
 		// TODO Auto-generated method stub
 		for (int i = 0; i < array.length; i++) {
-			if (array[i] == data) {
+			if (array[i].equals(data)) {
 				return true;
 			}
 		}
